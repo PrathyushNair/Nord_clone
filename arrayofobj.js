@@ -306,15 +306,15 @@ let mens_activewear=[
 
     {brand:"Nike",
      description:"Dri-Fit Training T-shirt",
-     image_url:"https://n.nordstrommedia.com/id/sr3/aa1ced46-9f42-4807-ac13-0811b907192f.jpeg?h=365&w=240&dpr=2",
+     image_url:"https://n.nordstrommedia.com/id/sr3/14d8bcc8-b34e-47d6-abf7-a5cd0903eff7.jpeg?h=365&w=240&dpr=2",
      category:"Shirts",
      gender:"Male",
      fit:"Classicfit",
      material:"Jersey",
-     price:28,
-     price_symb:"$28",
+     price:26,
+     price_symb:"$26",
      str_price:"",
-     review_count:4},
+     review_count:4.75},
 
     {brand:"Z by Zella",
     description:"Urban Tech Performance Pants",
@@ -389,14 +389,14 @@ let mens_activewear=[
     review_count:4.1},
 
     {brand:"Calvin Klein",
-    description:"Cushion High Quarter Socks-Pack of 6",
-    image_url:"	https://n.nordstrommedia.com/id/sr3/9db51c26-db0e-42c9-96a4-e137f044a358.jpeg?h=365&w=240&dpr=2",
+    description:"Cushion High Quarter Socks",
+    image_url:"	https://n.nordstrommedia.com/id/sr3/69439546-3cae-45de-b494-454c15cde9cf.jpeg?h=365&w=240&dpr=2",
     category:"Socks",
     gender:"Unisex",
     fit:"Regularfit",
     material:"100%Wool",
-    price:11.97,
-    price_symb:"$11.97",
+    price:10.97,
+    price_symb:"$10.97",
     str_price:24.00,
     review_count:4.1},
 
@@ -534,15 +534,15 @@ let mens_activewear=[
 
    {brand:"Nike",
    description:"Everyday Cushion Low Ankle Socks-Pack of 3",
-   image_url:"	https://n.nordstrommedia.com/id/sr3/5746afb7-5fa8-467f-aa98-35ae410cac1b.jpeg?h=365&w=240&dpr=2",
+   image_url:"		https://n.nordstrommedia.com/id/sr3/4e10adb5-fd9f-47fb-9290-eddb1e271c85.jpeg?h=365&w=240&dpr=2",
    category:"Socks",
    gender:"Unisex",
    fit:"Classicfit",
    material:"100%Cotton",
-   price:15,
-   price_symb:"$15",
+   price:13.97,
+   price_symb:"$13.97",
    str_price:"",
-   review_count:3.9},
+   review_count:3.2},
 
    {brand:"Adidas",
    description:"Active Shorts",
@@ -713,16 +713,16 @@ let mens_activewear=[
   review_count:4.4},
 
   {brand:"Nike",
-  description:"Everyday Cushion Low Ankle Socks-Pack of 3",
-  image_url:"	https://n.nordstrommedia.com/id/sr3/5746afb7-5fa8-467f-aa98-35ae410cac1b.jpeg?h=365&w=240&dpr=2",
+  description:"Everyday Cushion Socks-Pack of 3",
+  image_url:"		https://n.nordstrommedia.com/id/sr3/80d21ca0-c698-4c58-b16a-aea741f4334c.jpeg?h=365&w=240&dpr=2",
   category:"Socks",
   gender:"Unisex",
   fit:"Classicfit",
   material:"100%Cotton",
-  price:15,
-  price_symb:"$15",
+  price:15.70,
+  price_symb:"$15.70",
   str_price:"",
-  review_count:3.9},
+  review_count:3.25},
 
   {brand:"Adidas",
   description:"Active Shorts",
@@ -749,16 +749,16 @@ let mens_activewear=[
   review_count:4.1},
 
   {brand:"Calvin Klein",
-  description:"Cushion High Quarter Socks-Pack of 6",
-  image_url:"	https://n.nordstrommedia.com/id/sr3/9db51c26-db0e-42c9-96a4-e137f044a358.jpeg?h=365&w=240&dpr=2",
+  description:"Cushion High Quarter ",
+  image_url:"		https://n.nordstrommedia.com/id/sr3/ef11a1f4-6697-4008-8784-12ddceafaaa9.jpeg?h=365&w=240&dpr=2",
   category:"Socks",
   gender:"Unisex",
   fit:"Regularfit",
   material:"100%Wool",
-  price:11.97,
-  price_symb:"$11.97",
+  price:15.97,
+  price_symb:"$15.97",
   str_price:24.00,
-  review_count:4.1},
+  review_count:2.5},
 
   {brand:"Z by Zella",
   description:"Blade Golf Shorts",
@@ -774,13 +774,13 @@ let mens_activewear=[
 
   {brand:"Z by Zella",
   description:"Traction Running Tights",
-  image_url:"https://n.nordstrommedia.com/id/sr3/4c9de69c-dc75-40d8-ab86-6b5d3c31ab2f.jpeg?h=365&w=240&dpr=2",
+  image_url:"	https://n.nordstrommedia.com/id/sr3/871c885b-a6d5-47e2-9392-d2e230600bd9.jpeg?h=365&w=240&dpr=2",
   category:"Pants",
   gender:"Male",
   fit:"Slimfit",
   material:"Jersey",
   price:13.48,
-  price_symb:"$26.97",
+  price_symb:"$13.48",
   str_price:"",
   review_count:4.00},
 
@@ -1074,6 +1074,6 @@ review_count:4.2},
 
 
 
-export{mens_activewear,babygirl,generalproducts} 
+export default mens_activewear
 
 
