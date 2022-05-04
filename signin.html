@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   
+
+    #signIN {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border: none;
+        z-index: 7;
+        padding: 10px 20px;
+        background-color: white;
+        width: 100% !important;
+    }
+
+    #signIN li {
+        margin: 10px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    #signIN li:nth-child(1) {
+        width: 65%;
+        background-color: black;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+    #signIN li:nth-child(2) {
+        width: 65%;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+    #signIN a {
+        text-decoration: none;
+        color: #393939;
+    }
+
+    #signIN li:nth-child(1)>a {
+        color: white;
+    }
+
+
+
+    .signup-container {
+        width: 30%;
+        margin: auto;
+
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    .signup-btn {
+        background-color: black;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        padding: 10px;
+        width: 95%;
+        font-weight: 700;
+
+    }
+
+    .signup-btn:hover {
+        background-color: rgb(36, 36, 36);
+    }
+
+    .signup-label {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .signup-input {
+        padding: 10px;
+        margin-left: 10px;
+        width: 90%;
+        border: 1px solid #bbb
+    }
+
+    .error {
+        padding: 10px;
+        margin-left: 10px;
+        width: 90%;
+        border: 1px solid red;
+        border-bottom: 3px solid red;
+    }
+
+    input:focus {
+
+        border-bottom: 3px solid black;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+
+    }
+
+    .signup-a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .right {
+        float: right;
+    }
+
+    #bag-icon-text {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-decoration: none;
+        gap: 5px;
+    }
+
+    #itemsInBag {
+        width: 100%;
+        height: 50%;
+        border-radius: 50%;
+        font-weight: 800;
+        font-size: 18px;
+        color: rgb(61, 61, 61);
+        margin-bottom: 12px;
+    }
+</style>
+<body>
+    
+    <div class="signup-container" id="email_container">
+        <h2 style="margin:10px;">Sign In | Create Account</h2>
+        <p style="margin:10px;">Enter your email to get started</p>
+
+        <label class="signup-label" for="email">Email</label>
+        <br>
+        <input class="signup-input" type="text" id="email" style="margin:10px;" />
+        <br>
+        <p id="error_message" style="visibility:hidden;margin:10px">Enter Email address as name@email.com</p>
+        <button class="signup-btn" onclick="checkUser(event)">Next</button>
+
+        <p style="margin:10px;">By tapping Next, you agree to our<a href="privacy.html">Privacy Policy</a> and <a
+                href="terms.html">Terms & Conditions</a>.</p>
+    </div>
+
+
+
+    <div class="login-container signup-container" id="login_container" style="display:none">
+        <h2 style="margin:10px;">Welcome back !</h2>
+        <p style="margin:10px;">Sign in with the same info at:</p>
+        <div class="flex" style="margin:10px;gap:10px">
+       
+        </div>
+        <label class="signup-label" class="signup-label" for="email">Email</label>
+        <br>
+        <p style="margin:10px;" id="login_user_email"> </p>
+        <br>
+
+        <label class="signup-label" for="password" style="margin-bottom:10px">Password<span class="material-icons"
+                style="font-size:20px;color:gray">help</span></label>
+        <br>
+        <input class="signup-input" type="password" id="password" />
+        <br>
+        <p class="error_message" id="error_message" style="font-size:12px;color:red;visibility:hidden;margin:10px">
+            Please enter correct password</p>
+        <a href="forgot.html" style="font-size:15px;color:black;margin-left: 10px;">Forgot password ? </a>
+
+        <div style="display:grid;grid-template-columns:auto 100%;gap:10px;margin:10px"><input type="checkbox"
+                id="keep_me_signed" /><label for="keep_me_signed"
+                style="text-align:left;margin-bottom: 5px;font-size: 15px;font-weight: 100;">Keep me signed In. <a
+                    href="details.html">Details</a></label></div>
+
+        <button class="signup-btn" onclick="login(event)">Sign In</button>
+
+    </div>
+
+
+    <script>
+
+
+
+        if (localStorage.getItem('users') == null) {
+            localStorage.setItem('users', JSON.stringify([]));
+        }
+
+        function isRegisteredUser(email) {
+
+            var users = JSON.parse(localStorage.getItem('users'));
+
+            var userDetails = users.filter(function (user) {
+                //console.log(user);
+                return user.email == email;
+            });
+
+            console.log(userDetails);
+
+
+            if (userDetails.length == 0)
+                return false;
+            else
+                return true;
+
+
+        }
+
+        //this method is called every time next is clicked and the email address parameter is passed dynamically
+        function checkUser(event) {
+
+            var email = document.getElementById('email').value;
+            if (email == '' || email == null) {
+                //alert("please enter a email id !");
+                document.getElementById('email').setAttribute('class', 'error');
+                document.getElementById('error_message').style.visibility = 'visible';
+                document.getElementById('error_message').style.color = 'red';
+            }
+            else if (isRegisteredUser(email)) {
+
+                
+                    document.getElementById('email').removeAttribute("class");
+                    document.getElementById('error_message').style.visibility = 'hidden';
+                    //document.getElementById('error_message').style.color = 'red';
+                    renderLogin();
+
+                    localStorage.setItem('tried_login_user', email);
+                }
+                else {
+
+                    localStorage.setItem('tried_login_user', email);
+                    window.location = "signup.html";
+                }
+
+            }
+
+
+        function renderLogin() {
+            document.getElementById('email_container').remove();
+
+            document.getElementById('login_container').style.display = 'block';
+            document.getElementById('login_user_email').textContent = localStorage.getItem('tried_login_user');
+        }
+
+
+
+        function login(event) {
+
+            if (localStorage.getItem("bag") == null) {
+                localStorage.setItem("bag", JSON.stringify([]))
+            }
+
+            console.log(event);
+
+            var email = localStorage.getItem('tried_login_user');
+            var users = JSON.parse(localStorage.getItem('users'));
+            var filter_arr = users.filter(function (el) {
+                return el.email == email;
+            });
+            var password = filter_arr[0].password;
+            var user_pass = document.getElementById('password').value;
+            if (user_pass == password) {
+                // alert("Login success");
+                document.getElementById('error_message').style.visibility = "hidden";
+                document.getElementById('password').removeAttribute("class");
+                document.getElementById('password').setAttribute("class", "signup-input")
+                document.location = "home_page.html";
+                var userDetails = JSON.parse(localStorage.getItem('users'));
+                var arr = userDetails.filter(function (el) {
+                    return el.email === email;
+                });
+                localStorage.setItem('logeduser', JSON.stringify(arr[0]));
+
+                if (localStorage.getItem('logeduser') != null) {
+                    var generic_bag = JSON.parse(localStorage.getItem('bag'));
+                    var logeduser = JSON.parse(localStorage.getItem('logeduser'));
+                    var key = `bag_${logeduser.email}`;
+
+                    if (JSON.parse(localStorage.getItem(key)) === null) {
+                        localStorage.setItem(key, JSON.stringify(generic_bag));
+                    }
+
+                    if (JSON.parse(localStorage.getItem(key)).length === 0) {
+                        window.location.href = 'home_page.html';
+                    } else if (generic_bag != null) {
+                        window.location.href = 'shopping_bag.html';
+                        localStorage.setItem('bag', JSON.stringify([]));
+                    }
+                }
+
+            }
+            else {
+                document.getElementById('password').setAttribute("class", "error")
+                document.getElementById('error_message').style.visibility = "visible";
+
+            }
+
+        }
+
+
+        function signBar() {
+            var bar = document.querySelector("#signIN")
+            bar.style.display = "block";
+        }
+
+        function removeSignBar() {
+            var bar = document.querySelector("#signIN")
+            bar.style.display = "none";
+        }
+
+
+        var bagIcon = document.getElementById('bag-icon-text');
+        var items = document.getElementById('itemsInBag');
+
+  
+
+    </script>
+</body>
+</html>
