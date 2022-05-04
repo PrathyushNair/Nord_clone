@@ -15,16 +15,17 @@ function navbar(){
 
                 <div class="loginDropdown-content">
                     <span><i class="fa-solid fa-sort-up"></i></span>
-                    <button id="loginBtn" onclick="openNav()">Sign In | Create Account</button>
+                    <li id ="sign-in-btn"><a href="signin.html">Sign In</a></li>
+                    <li id = "sign-up-btn"><a href="signup.html">Create account</a></li>
                     <h3><a href="#">Your account</a></h3>
                     <p><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;&nbsp;<a href="#">Purchases</a></p>
                     <p><i class="fa-regular fa-heart"></i>&nbsp;&nbsp;&nbsp;<a href="#">Wish List</a></p>
                     <p><i class="fa-solid fa-n"></i>&nbsp;&nbsp;&nbsp;<a href="#">The Nordy Club Rewards</a></p>
                     <p><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;&nbsp;<a href="#">Shipping Addresses</a></p>
-                    <p><i class="fa-regular fa-credit-card"></i>&nbsp;&nbsp;&nbsp;<a href="#">Payment Methods</a></p>
                     <p><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;&nbsp;&nbsp;<a href="#">Pay & Manage Nordstrom Card</a></p>
                     <p><i class="fa-solid fa-store"></i>&nbsp;&nbsp;&nbsp;<a href="#">Store Locator</a></p>
                     <p><a href="#">Account Settings</a></p>
+                    <li id="signout" style="display:none">Logout</li>
                     <p><i class="fa-solid fa-passport"></i>&nbsp;&nbsp;&nbsp;<a href="#">Password & Personal Info</a></p>
                     <p><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;<a href="#">Email & Mail Preferences</a></p>
                     

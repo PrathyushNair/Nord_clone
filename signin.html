@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/navStyle.css">
     <title>Document</title>
 </head>
 
@@ -143,7 +148,7 @@
     }
 </style>
 <body>
-    
+    <div id="navContainer"></div>
     <div class="signup-container" id="email_container">
         <h2 style="margin:10px;">Sign In | Create Account</h2>
         <p style="margin:10px;">Enter your email to get started</p>
@@ -189,7 +194,7 @@
         <button class="signup-btn" onclick="login(event)">Sign In</button>
 
     </div>
-
+    <script src="./scripts/nav.js" type="module"></script>
 
     <script>
 
@@ -277,7 +282,7 @@
                 document.getElementById('error_message').style.visibility = "hidden";
                 document.getElementById('password').removeAttribute("class");
                 document.getElementById('password').setAttribute("class", "signup-input")
-                document.location = "home_page.html";
+                document.location = "header.html";
                 var userDetails = JSON.parse(localStorage.getItem('users'));
                 var arr = userDetails.filter(function (el) {
                     return el.email === email;
@@ -294,7 +299,7 @@
                     }
 
                     if (JSON.parse(localStorage.getItem(key)).length === 0) {
-                        window.location.href = 'home_page.html';
+                        window.location.href = 'header.html';
                     } else if (generic_bag != null) {
                         window.location.href = 'shopping_bag.html';
                         localStorage.setItem('bag', JSON.stringify([]));
