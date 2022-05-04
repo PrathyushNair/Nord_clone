@@ -4,6 +4,7 @@
     align-items: center;
     height: 100px;
     width: 100%;
+    z-index: 50;
 }
 #rimg{
     width: 83px;
@@ -143,6 +144,7 @@ li>div{
     /* padding: 14px 16px 0px 16px; */
     text-align: left;
     width:100%;
+    z-index: 50;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   }
 

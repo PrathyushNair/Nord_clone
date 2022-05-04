@@ -1,0 +1,165 @@
+#Prprodcontainer{
+    height:800px;
+    width:100%;
+    /* border:1px solid black; */
+    display:flex;
+    gap:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#Prprodimg{
+    width:45%;
+    height:auto;
+    /* border:1px solid red; */
+}
+#Prproddesc{
+    width:45%;
+    height:auto;
+    /* border:1px solid green; */
+    line-height: 20px;;
+   
+}
+#Prcreditcard{
+    color:teal
+
+}
+#Prsize{
+    width:100%;
+    border:1px solid grey;
+    height:50px;
+   
+}
+#sizedropdowns{
+    display:none;
+
+}
+#size{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 2.5%;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#num1{
+    border:1px solid grey;
+    height:50px;
+    color:grey;
+    padding-left: 4px;
+    padding-top:10px;
+    box-sizing: border-box;
+}
+
+#Prcolor{
+    width:100%;
+    border:1px solid grey;
+    height:50px;
+    margin-top: 20px;
+   
+}
+#colordropdowns{
+    display:none;
+
+
+
+}
+#color{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 2.5%;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#col{
+    border:1px solid grey;
+    height:50px;
+    color:grey;
+    padding-left: 4px;
+    padding-top:10px;
+    box-sizing: border-box;
+    display:flex;
+    gap:30px;
+}
+#c1{
+   
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#c2{
+   
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: #3a2d2b;
+}
+#c3{
+   
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: #963349;
+}
+
+#c4{
+   
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: #2b3141;
+}
+#Praddtobag{
+    background-color: #00819d;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:35px;
+    gap:10px;
+}
+#Praddtowishlist{
+   color:#00819d;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:35px;
+    gap:10px;
+    text-decoration: underline;
+}
+#Praddtowishlist>span{
+    color:grey
+}
+
+#Prshipping_gift{
+height:auto;
+width:30%;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#Prshopgift{
+    border:1px solid #00819d;
+    color:#00819d;
+    text-align: center;
+    height:50px;
+    width:70%;
+}
+#Prshopgift:hover{
+    color:white;
+    background-color: #00819d;
+}
+#Prfreqbought
+{
+    display:flex;
+    height:400px;
+    gap:20px;
+    border:1px solid blue;
+    width:100%;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}

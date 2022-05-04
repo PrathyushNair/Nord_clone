@@ -1,0 +1,140 @@
+#navbar{
+    height:100px;
+    width:100%;
+   
+    border:1px solid green;
+    z-index: 1;
+    background-color: aqua;
+}
+#Prcontainer{
+    display:flex;
+}
+
+#Prsidebar{
+    /* //padding-top:100px; */
+    display:block;
+    margin-top:150px;
+    margin-left: 1%;
+    width:280px;
+    position:fixed;
+    /* border:1px solid red; */
+    height:100%;
+    /* z-index: 0; */
+    top:0;
+    left:0;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+#Prsidebar:hover{
+    cursor: pointer;
+}
+#Prpagetitle{
+    margin-left:300px;
+    /* border:1px solid green;   */
+    box-sizing: border-box;
+    height:auto; 
+    
+}
+#Prmentitle{
+    margin-bottom: -10px;
+}
+#Prproductdisplay{
+    
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    width:auto;
+    margin-left:300px;
+    margin-top: 2%;
+    /* border:1px solid black; */
+    position:sticky;
+    right:100px;
+    gap:30px;
+    margin-left:300px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#Prcategory,#Prbrand,#Prfit,#Prgender{
+    font-weight: bold;
+    padding-left: 10px;
+    display:flex;
+    
+}
+
+.Prgenderdropdown{
+    padding-left: 10px;
+    display: none;
+}
+#Male,#Female,#Unisex
+{
+ display:block;
+}
+
+.Prcategorydropdown{
+    padding-left: 10px;
+    display: none;
+}
+#Shirts,#Jackets,#Shorts,#Socks#Pants
+{
+ display:block;
+}
+
+.Prbranddropdown{
+    padding-left: 10px;
+    display: none;
+}
+#Adidas,#CalvinKlein,#Nike,#Spyder#ZbyZella
+{
+ display:block;
+}
+
+.Prfitdropdown{
+    padding-left: 10px;
+    display: none;
+   
+}
+
+#Slimfit,#Regularfit,#Straightfit,#Classicfit,#Relaxedfit
+{
+   
+ display:block;
+ 
+}
+
+#Prsorting{
+    /* background-color: green; */
+    border:1px solid Black;
+    margin-left:80%;
+    display: flex;
+    justify-content: flex-end;
+    width:20%;
+    height:40px;
+    padding:5px 5px 5px 5px;
+}
+.Prdescription{
+    color:grey;
+    
+}
+.Prdescripton:hover{
+   
+    text-decoration: underline;
+}
+
+.Prquickview{
+    border:1px solid grey;
+    z-index: 1;
+    position: relative;
+    display:flex;
+    margin-top: -10%;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:50px;
+    color:teal;
+    background-color: white;
+}
+.Prquickview:hover{
+    cursor: pointer;
+}
+

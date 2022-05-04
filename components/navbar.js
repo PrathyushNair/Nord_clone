@@ -37,7 +37,7 @@ function navbar(){
         </div>
         <div id="cartStyle">
             <i class="fa-solid fa-bag-shopping"></i>&nbsp;
-            <span id="cartItems">0</span>
+            <span id="cartItems">0</span> 
         </div>
     </div>
     <hr id="rline">
