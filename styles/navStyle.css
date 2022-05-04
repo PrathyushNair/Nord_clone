@@ -1,0 +1,292 @@
+#rmain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+#rimg{
+    width: 83px;
+    height: 36px;
+    margin-left: 20px;
+}
+#rinput{
+    border: 1px solid black;
+}
+#rsearch{
+    height: 45px;
+    width: 50px;
+    border: none;
+    background-color: white;
+}
+#rbar{
+    width: 850px;
+    position: relative;
+    height: 45px;
+    text-indent: 7px;
+    line-height: 2;
+    border: none;
+}
+
+#rbar:focus{
+    outline: none;
+}
+
+span{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#rselect{
+    border: none white;
+    width: 15px;
+}
+#rline{
+    color: darkgray;
+    width: 100%;   
+   
+}
+#rul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-flow: row; */
+    justify-content: center;
+    list-style: none;
+    list-style-image: none;
+    margin-top: 20px;
+}
+
+li>div{
+    display: inline;
+}
+#but{
+    backface-visibility: hidden;
+    transition: opacity 300ms;
+    text-align: center;
+    border: none;
+    background-color: white;
+    padding: 1px 0px;
+    font-size: 16px;
+}
+#but:hover{
+    text-decoration: underline;
+}
+#but:focus{
+    color: teal;
+    text-decoration: underline;
+}
+#but1{
+    color: red;
+    backface-visibility: hidden;
+    transition: opacity 300ms;
+    text-align: center;
+    border: none;
+    background-color: white;
+    padding: 1px 0px;
+    font-size: 16px;
+}
+#but1:hover{
+    text-decoration: underline;
+}
+
+
+/****************** Categories Dropdown styling STARTS here **************************/
+/* .dropbtn {
+    width:50%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  } */
+  
+  .dropdown {
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    font-size: 18px;
+  }
+
+
+  #rul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    list-style: none;
+    list-style-image: none;
+    margin-top: 20px;
+}
+
+#navClear{
+    color: red;
+}
+
+#navClear:hover{
+    color: red;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+  }
+
+#navFlash{
+    color:#00819d;
+}
+  
+  .dropdown-content {
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    /* background-color: #f1f1f1; */
+    /* padding: 14px 16px 0px 16px; */
+    text-align: left;
+    width:100%;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  }
+
+  
+
+  .dropdown-content a {
+    color: #393939;
+    padding: 6px 0px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* #listCat a{
+    padding:11px 0px;
+    font-size: 15px;
+  } */
+  
+  
+  .dropdown-content a:hover {
+      color: #00819d;
+    }
+  
+  
+
+  /* .dropdown-content table{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+  } */
+  
+  .dropdown:hover .dropbtn {
+    background-color: #fff;
+    width:fit-content;
+    padding-right: 10px;
+    height: 100%;
+    color: #000;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+  /* #listCat span{
+    float: right;
+    font-weight: 700;
+    font-size: 16px;
+  } */
+  #cateTable{
+      width: 100%;
+      background-color: #fff;
+  }
+  
+  #cateTable th,td{
+      padding-left: 20px;
+  }
+
+  .select:hover{
+    color: #00819d;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #00819d;
+  }
+
+  /***************** Categories Dropdown styling ENDS here *******************/
+
+
+  /***************** Login/Register Section ******************/
+
+/* .loginBtn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+} */
+
+.loginDropdown {
+    position: relative;
+    display: block;
+    float: right;
+  }
+  
+  .loginDropdown-content {
+    display: none;
+    position: absolute;
+    right:-60px;
+    top: 28px;
+    background-color: #fff;
+    padding: 14px 20px;
+    text-align: left;
+    /* min-width:140px; */
+    /* width: auto; */
+    line-height: 25px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  /* .loginDropdown-content a {
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+  } */
+  
+  .loginDropdown-content a:hover {
+        color: #00819d; 
+        cursor: pointer;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #00819d;
+    }
+  
+  .loginDropdown:hover .loginDropdown-content {
+    display: block;
+    width: 220px;
+  }
+  
+  /* .loginDropdown:hover .loginBtn {
+    background-color: #fff;
+    width:200px;
+    padding-right: 10px;
+    height: 100%;
+    color: #000;
+  } */
+  
+  .loginDropdown-content  a{
+    text-decoration: none;
+    color: #393939;
+    /* font-size: 15px; */
+  }
+  
+  #loginBtn{
+    border: none;
+    background-color: #00819d;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .loginDropdown-content span{
+    position:absolute; 
+    top: -12px; 
+    right: 55px; 
+    font-size: 40px; 
+    color: #fff;
+  }
+
+  #cartStyle{
+      font-size: 20px;
+  }

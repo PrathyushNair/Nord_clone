@@ -5,143 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEADER</title>
-    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
-    <style>
-        #rmain{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100px;
-        }
-        #rimg{
-            width: 83px;
-            height: 36px;
-            margin-left: 20px;
-        }
-        #rinput{
-            border: 1px solid black;
-        }
-        #rsearch{
-            height: 45px;
-            width: 50px;
-            border: none;
-            background-color: white;
-        }
-        #rbar{
-            width: 850px;
-            position: relative;
-            height: 45px;
-            text-indent: 7px;
-            line-height: 2;
-            border: none;
-        }
-        span{
-            text-transform: capitalize;
-            font-size: 20px;
-        }
-        #rselect{
-            border: none white;
-            width: 15px;
-        }
-        #rline{
-            color: darkgray;
-            width: 1465px;   
-           
-        }
-        #rul{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-            list-style: none;
-            list-style-image: none;
-            margin-top: 20px;
-        }
-        #but{
-            backface-visibility: hidden;
-            transition: opacity 300ms;
-            text-align: center;
-            border: none;
-            background-color: white;
-            padding: 1px 0px;
-            font-size: 16px;
-        }
-        #but:hover{
-            text-decoration: underline;
-        }
-        #but:focus{
-            color: teal;
-            text-decoration: underline;
-        }
-        #but1{
-            color: red;
-            backface-visibility: hidden;
-            transition: opacity 300ms;
-            text-align: center;
-            border: none;
-            background-color: white;
-            padding: 1px 0px;
-            font-size: 16px;
-        }
-        #but1:hover{
-            text-decoration: underline;
-        }
-    </style>
+    <!-- <script src="https://kit.fontawesome.com/40db8f0f86.js" crossorigin="anonymous"></script> -->
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/navStyle.css">
 </head>
 <body>
-    <div id="rmain">
-        <img src="https://n.nordstrommedia.com/alias/nordstrom-rack-logo.svg" alt="blank" id="rimg">
-        <div id="rinput">
-            <button id="rsearch"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <input type="search" id="rbar" name="keyword" autocomplete="off" placeholder="Search for products or brands" maxlength="140" value="">
-            
-        </div>
-        <div>
-            <span>Sign In</span>
-            <select name="Sing In" id="rselect"></select>
-        </div>
-        <div>
-            <i class="fa-solid fa-bag-shopping"></i>
-        </div>
-    </div>
-    <hr id="rline">
-    <div id="rlist">
-        <ul id="rul">
-            <li>
-                <button id="but1">Clearance</button>
-            </li>
-            <li>
-                <button id="but">Women</button>
-            </li>
-            <li>
-                <button id="but">Men</button>
-            </li>
-            <li>
-                <button id="but">Kids</button>
-            </li>
-            <li>
-                <button id="but">Shoes</button>
-            </li>
-            <li>
-                <button id="but">Activewear</button>
-            </li>
-            <li>
-                <button id="but">Bags &amp; Accessories</button>
-            </li>
-            <li>
-                <button id="but">Home</button>
-            </li>
-            <li>
-                <button id="but">Beauty</button>
-            </li>
-            <li>
-                <button id="but">Gifts</button>
-            </li>
-            <li>
-                <button id="but">Flash Events</button>
-            </li>
-        </ul>
-    </div>
+    <div id="navContainer"></div>
 </body>
 </html>
+
+<script src="./scripts/nav.js" type="module"></script>
