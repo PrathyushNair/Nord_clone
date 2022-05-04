@@ -292,3 +292,31 @@ li>div{
   #cartStyle{
       font-size: 20px;
   }
+  #signout{
+    cursor: pointer;
+  }
+  #sign-in-btn{
+    list-style: none;
+    width: 65%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 30px;
+    
+  }
+  #sign-in-btn >a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #sign-up-btn{
+    list-style: none;
+    width: 65%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 30px;
+
+  }
+  #sign-up-btn >a{
+    
+    text-decoration: none;
+  }
