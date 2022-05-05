@@ -1,9 +1,30 @@
 import mens_activewear from "./arrayofobj.js"
+import navbar from"./components/navbar.js"
+document.addEventListener("DOMContentLoaded", function (e) {
+
+    var p = document.getElementById("signInText");
+    
+    if (localStorage.getItem('logeduser') != null) {
+        p.innerText = "Hi,\t" + JSON.parse(localStorage.getItem('logeduser')).fname;
+        document.getElementById("sign-in-btn").style.display = "none";
+        document.getElementById("sign-up-btn").style.display = "none";
+        var signout = document.getElementById("signout");
+        signout.style.display = "block"
+        signout.addEventListener("click", function (ev) {
+            localStorage.removeItem("logeduser");
+            document.location = "header.html";
+        });
+    
+    }
+    });
+
 let proddata=JSON.parse(localStorage.getItem("product"))
 let bag=JSON.parse(localStorage.getItem("bag"))||[]
 let sizedropdown=document.querySelector("#sizedropdowns")
 let colordropdown=document.querySelector("#colordropdowns")
-
+// document.querySelector("#navContainer").innerHTML=navbar()
+// document.querySelector("#cartItems").innerText=bag.length
+// console.log(bag.length)
 
 /////////////////////////Checking if size and color has been data entered////////////
 let colorval=false
@@ -55,10 +76,11 @@ proddata.map((el)=>{
             bag.push(el)
         localStorage.setItem("bag",JSON.stringify(bag))
         document.querySelector("#Praddtobag").innerText="Adding to bag..."
-        document.querySelector("#cartItems").innerText=bag.length
+       
         setTimeout(()=>{
             document.querySelector("#Praddtobag").innerText="Item added to bag"
         },3000)
+        document.querySelector("#cartItems").innerText=bag.length
         }
       
     })
