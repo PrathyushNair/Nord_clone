@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navStyle.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Prompt', sans-serif;
+    }
+
+    table,
+    td,
+    th {
+        /* border: 1px solid #ddd; */
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    th,
+    td {
+        padding: 10px 35px;
+    }
+
+    .box>th:nth-child(1) {
+        padding-right: 300px
+    }
+
+    .cartcontain {
+        display: flex;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #box2 {
+        margin-top: 50px;
+
+    }
+
+    #box2>table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #shopping-bag-sections {
+        width: 35%;
+        /* border: 1px solid rgb(167, 167, 167); */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-weight: 500;
+        color: rgb(65, 65, 65);
+        border: 1px solid rgb(190, 190, 190);
+        margin-top: 63px;
+    }
+
+    #shopping-bag-sections>* {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #shopping-bag-tag {
+        background-color: rgb(212, 212, 212);
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 3px;
+    }
+
+    #shopping-bag-titles-name {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgb(51, 51, 51);
+        letter-spacing: 1px;
+    }
+
+
+    #shopping-bag-summary {
+        display: grid;
+        grid-template-columns: 35% 35%;
+        gap: 30%;
+    }
+
+    .payment_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    #A_container {
+        width: 70%;
+        margin: auto;
+    }
+
+    #checkout-btn {
+        background: #00819d;
+        border-style: none;
+        padding: 17px 16px;
+        width: 100%;
+    }
+
+    #checkout-btn a {
+        color: #fff;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div id="navContainer"></div>
+    <div id="A_container">
+
+
+        <div id="shopping-bag-sections">
+            <span id="shopping-bag-tag">Shopping Bag</span>
+            <span id="shopping-bag-saved">Saved for Later</span>
+        </div>
+
+        <div id="shopping-bag-titles">
+            <p id="shopping-bag-titles-name">Shopping Bag</p>
+            <p>Items in your bag are not on hold.</p>
+            <p id="shopping-bag-titles-gift"><i class="fa-solid fa-gift"></i>Add a gift message when you check out.</p>
+            <p id="shopping-bag-titles-text">Free Shipping on Orders over $89 for a limited time or free ship to U.S.
+                stores. <a href="#">Learn more</a></p>
+        </div>
+        <hr>
+        <div id="container">
+            <div class="box1">
+                <main>
+                    <table>
+                        <thead>
+   
+                        </thead>
+
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </main>
+                <div class="emptycart"></div>
+            </div>
+            <hr>
+            <div id="shopping-bag-summary">
+                <div id="shopping-bag-payment-methods">
+                    <p>Accepted Payment Methods</p>
+                    <span id="shopping-bag-credit-logos">
+                        <img class="payment_image"
+                            src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" />
+                        <img class="payment_image"
+                            src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" />
+                        <img class="payment_image"
+                            src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" />
+                        <img class="payment_image"
+                            src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" />
+                    </span>
+
+                    <p>Need help? Call 1.888.282.6060 or <a href="">chat with us</a></p>
+
+                    <p><a href="">Shipping internationally?</a></p>
+                </div>
+
+                <div id="shipping-bag-price-summary">
+                    <div id="shipping-bag-subtotal">
+                        <p>Subtotal</p>
+                    </div>
+
+                    <hr style="width: 100%;" />
+                    <div id="estimate_total"></div>
+                    <p>or 4 interest-free payments of $15.97 with <span class="afterpay">afterpay</span> ⓘ</p>
+                    <div><button id="checkout-btn"><a href="checkout.html">checkout</a></button></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="./scripts/shopping_bag.js"></script>
+<script src="./scripts/nav.js" type="module"></script>
