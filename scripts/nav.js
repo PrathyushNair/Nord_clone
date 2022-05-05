@@ -1,7 +1,7 @@
 import navbar from "../components/navbar.js";
-
+let bag=JSON.parse(localStorage.getItem("bag"))||[]
 document.getElementById("navContainer").innerHTML = navbar();
-
+document.querySelector("#cartItems").innerText=bag.length
 var categoriesArray=[
     [
       '<tr>  <th><a href="#">Clearance: Get Inspired</a></th> <th><a href="#">Men</a></th>  <th><a href="#">Kids</a></th>  <th><a href="#">Home</a></th>   </tr>',
