@@ -79,8 +79,10 @@ proddata.map((el)=>{
        
         setTimeout(()=>{
             document.querySelector("#Praddtobag").innerText="Item added to bag"
-            document.querySelector("#cartItems").innerText=bag.length
+            
+           
         },3000)
+        document.querySelector("#cartItems").innerText=bag.length
         
         }
       

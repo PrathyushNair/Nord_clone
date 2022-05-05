@@ -3,7 +3,7 @@ import {sorting,display} from "./productpage_functions/functionalities.js"
 document.addEventListener("DOMContentLoaded", function (e) {
 
     var p = document.getElementById("signInText");
-    
+
     if (localStorage.getItem('logeduser') != null) {
         p.innerText = "Hi,\t" + JSON.parse(localStorage.getItem('logeduser')).fname;
         document.getElementById("sign-in-btn").style.display = "none";

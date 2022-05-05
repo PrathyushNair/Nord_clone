@@ -24,7 +24,8 @@
     left:0;
     line-height: 50px;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    overflow-y:scroll;
   
 }
 #Prcollection{
@@ -44,7 +45,7 @@
 #PrRunning,#PrGolf,#PrAthleisure,#PrNewArrival,#PrHiking
 {
     height:100%;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: medium;
     color:grey;
     text-decoration: underline;
@@ -77,7 +78,7 @@
     right:100px;
     gap:30px;
     margin-left:300px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     
 }
 #Prcategory,#Prbrand,#Prfit,#Prgender,#Prmaterial,#Procassion,#Prprice{
