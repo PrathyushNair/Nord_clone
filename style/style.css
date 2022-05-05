@@ -13,7 +13,7 @@
 #Prsidebar{
     /* //padding-top:100px; */
     display:block;
-    margin-top:150px;
+    margin-top:200px;
     margin-left: 1%;
     width:280px;
     position:fixed;
@@ -27,6 +27,30 @@
     font-family: Arial, Helvetica, sans-serif;
   
 }
+#Prcollection{
+    height:400px;
+    width:100%;
+    border:1px solid red;
+    align-items: center;
+    padding: 15px 0px 0px 0px;
+    margin-top:200px;
+}
+#Prcollectionname{
+    display:flex;
+    justify-content: space-around;
+    margin-left: 2%;
+    
+}
+#PrRunning,#PrGolf,#PrAthleisure,#PrNewArrival,#PrHiking
+{
+    height:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color:grey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 #Prsidebar:hover{
     cursor: pointer;
@@ -47,7 +71,7 @@
     grid-template-columns: repeat(4,1fr);
     width:auto;
     margin-left:300px;
-    margin-top: 2%;
+    margin-top: 150px;
     /* border:1px solid black; */
     position:sticky;
     right:100px;
@@ -56,7 +80,7 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
-#Prcategory,#Prbrand,#Prfit,#Prgender{
+#Prcategory,#Prbrand,#Prfit,#Prgender,#Prmaterial,#Procassion,#Prprice{
     font-weight: bold;
     padding-left: 10px;
     display:flex;
@@ -76,8 +100,9 @@
     padding-left: 10px;
     display: none;
 }
-#Shirts,#Jackets,#Shorts,#Socks#Pants
+#Shirts,#Jackets,#Shorts,#Socks,#Pants
 {
+    font-size: larger;
  display:block;
 }
 
@@ -137,6 +162,9 @@
 }
 .Prquickview:hover{
     cursor: pointer;
+}
+label{
+    font-size: large;
 }
 
 

@@ -31,12 +31,14 @@ document.querySelector("#Prgender").addEventListener("click",function(){
 
 console.log(genderdropdown.style.display)
 if(genderdropdown.style.display==="none"||genderdropdown.style.display==="")
-{
+{   document.querySelector("#grplus").innerText="-"
     genderdropdown.style.display="block"
+   
         
 }
-else{
+else{document.querySelector("#grplus").innerText="+"
     genderdropdown.style.display="none"
+    
         
     }
     
@@ -44,16 +46,17 @@ else{
 //////////////////////////////////////////////////////
 
 
-/////////////////////////Gender Dropdown Functionality////////////////////////////
+/////////////////////////Category Dropdown Functionality////////////////////////////
 let categorydropdown=document.querySelector(".Prcategorydropdown")
 document.querySelector("#Prcategory").addEventListener("click",function(){
 console.log(genderdropdown.style.display)
 if(categorydropdown.style.display==="none"||categorydropdown.style.display==="")
-{
+{   document.querySelector("#crplus").innerText="-"
     categorydropdown.style.display="block"
         
 }
 else{
+    document.querySelector("#crplus").innerText="+"
     categorydropdown.style.display="none"
         
     }
@@ -67,11 +70,12 @@ let branddropdown=document.querySelector(".Prbranddropdown")
 document.querySelector("#Prbrand").addEventListener("click",function(){
 console.log(genderdropdown.style.display)
 if(branddropdown.style.display==="none"||branddropdown.style.display==="")
-{
+{    document.querySelector("#brplus").innerText="-"
     branddropdown.style.display="block"
         
 }
 else{
+    document.querySelector("#brplus").innerText="+"
     branddropdown.style.display="none"
         
     }
@@ -84,11 +88,12 @@ let fitdropdown=document.querySelector(".Prfitdropdown")
 document.querySelector("#Prfit").addEventListener("click",function(){
 console.log(genderdropdown.style.display)
 if(fitdropdown.style.display==="none"||fitdropdown.style.display==="")
-{
+{    document.querySelector("#ftplus").innerText="-"
     fitdropdown.style.display="block"
         
 }
 else{
+    document.querySelector("#ftplus").innerText="+"
     fitdropdown.style.display="none"
         
     }
@@ -189,5 +194,26 @@ for(let x of fitchild)
   })
 }
 
+/////////////////////Scroll functionality//////////////
+window.onscroll=function(){myfunction()}
+let count=0
+function myfunction()
+{   count++
+    // if(count>50 )
+    // {
+    //    console.log("50 px exceeded") 
+    // }
+    if(document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+        console.log("down")
+        document.querySelector("#Prsidebar").style.marginTop="0px"
+      }
+      else if(document.body.scrollTop < 450 || document.documentElement.scrollTop <450) {
+        console.log("up")
+        document.querySelector("#Prsidebar").style.marginTop="200px"
+      }
+     
+    
+}
+/////////////////////////////
 
 
