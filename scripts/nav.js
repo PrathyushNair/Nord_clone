@@ -36,7 +36,7 @@ var categoriesArray=[
     ],
     [
         '<tr>  <th><a href="#">Men: Get Inspired</a></th>  <th><a href="#">Clothing</a></th>  <th><a href="#">Shoes</a></th>  <th><a href="#">Young Adult</a></th>  <th><a href="#">Activewear</a></th> </tr>',
-        '<tr>  <th><a href="#">Mothers Day Gifts</a></th>  <td><a href="#">Activewear</a></td>  <td><a href="#">Athletic & Running</a></td>  <td><a href="#">Accessories </a></td> <td><a href="#">Crops & Capris </a></td>  </tr>',
+        '<tr>  <th><a href="#">Mothers Day Gifts</a></th>  <td><a href="shop.html">Activewear</a></td>  <td><a href="#">Athletic & Running</a></td>  <td><a href="#">Accessories </a></td> <td><a href="#">Crops & Capris </a></td>  </tr>',
         '<tr>  <th><a href="#">New Arrivals</a></th>  <td><a href="#">Shorts</a></td>  <td><a href="#">Workwear Watches</a></td>  <td><a href="#">Backpacks</a></td> <td><a href="#">Jackets </a></td>  </tr>',
         '<tr>  <th><a href="#">Best Sellers</a></th>  <td><a href="#">Sweat Shirts</a></td>  <td><a href="#">Casual Watches</a></td>  <th><a href="#">Fashion Accessories</a></th> <td><a href="#">Pants </a></td>  </tr>',
         '<tr>  <th><a href="#">Designer Brands</a></th>  <td><a href="#">Casual Jackets</a></td>  <td><a href="#">Partywear Watches</a></td>  <td><a href="#">Belts</a></td> <td><a href="#">Shirts </a></td>  </tr>',

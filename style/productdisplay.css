@@ -1,4 +1,5 @@
 #Prprodcontainer{
+    margin-top: 3%;
     height:800px;
     width:100%;
     /* border:1px solid black; */
@@ -137,7 +138,9 @@
 
 #Prshipping_gift{
 height:auto;
-width:30%;
+width:100%;
+display:flex;
+justify-content: space-around;
 
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -157,8 +160,8 @@ font-family: Arial, Helvetica, sans-serif;
 {
     display:flex;
     height:400px;
-    gap:20px;
-    border:1px solid blue;
+    gap:10px;
+    
     width:100%;
     justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;

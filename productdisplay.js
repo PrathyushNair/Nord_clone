@@ -55,6 +55,7 @@ proddata.map((el)=>{
             bag.push(el)
         localStorage.setItem("bag",JSON.stringify(bag))
         document.querySelector("#Praddtobag").innerText="Adding to bag..."
+        document.querySelector("#cartItems").innerText=bag.length
         setTimeout(()=>{
             document.querySelector("#Praddtobag").innerText="Item added to bag"
         },3000)
@@ -112,17 +113,20 @@ for(let x of mens_activewear){
     {  console.log(x)
         let freqdiv=document.createElement("div")
         freqdiv.style.textAlign="center"
+        freqdiv.style.height="100%"
         let img=document.createElement("img")
         img.style.width="100%"
-        img.style.height="50%"
+        img.style.height="65%"
         let brand=document.createElement("p")
+        let description=document.createElement("p")
+        description.innerText=x.description
         let price=document.createElement("p")
         let rating=document.createElement("p")
         img.src=x.image_url
         brand=x.brand
         price.innerText=x.price_symb
-        rating.innerText=`Rating: ${x.review_count}`
-        freqdiv.append(img,brand,price,rating)
+        rating.innerText=`Rating: ${x.review_count}/5`
+        freqdiv.append(img,brand,description,price,rating)
        document.querySelector("#Prfreqbought").append(freqdiv)
        count++
     }
