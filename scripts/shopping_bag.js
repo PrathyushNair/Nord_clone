@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       signout.style.display = "block"
       signout.addEventListener("click", function (ev) {
           localStorage.removeItem("logeduser");
-          document.location = "header.html";
+          document.location = "index.html";
       });
   
   }
@@ -54,6 +54,7 @@ function showdata(cartData) {
 
     var button = document.createElement("button");
     button.textContent = "Remove";
+    button.style.cursor="pointer"
     button.addEventListener("click", function () {
       removeitem(el, index)
     })

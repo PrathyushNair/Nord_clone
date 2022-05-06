@@ -12,6 +12,7 @@ body{
 }
 #Prcontainer{
     display:flex;
+    margin-bottom: 10%;
 }
 
 #Prsidebar{

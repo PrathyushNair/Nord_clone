@@ -12,9 +12,9 @@
 
 .list>div{
     /* border: 1px solid black; */
-    
     padding-bottom: 7%;
     width: 170px;
+ 
 }
 
 .list a{
@@ -27,28 +27,33 @@
     color: teal;
 }
 #linksdiv>div{
-    /* border: 1px solid black; */
+   
     margin-right: 20px;
+  
 }
 #linksdiv h4{
     color: black;
 }
 
-#linksdiv{
+/* #linksdiv{
     margin-top: 10px;
     width: 100px;
     padding-left: 20px;
-}
+    border: 1px solid black;
+    background-color: pink;
+} */
 #social{
     width: 500px;
     margin-right: 0px;
-    
+   
+   
 
 }
 
 #logoCollector{
     padding: 3%;
     display: flex;
+    
 }
 #logoCollector>a{
     font-size: 18px;
@@ -70,10 +75,14 @@
 
 #sContainer{
     position: relative;
-    width:auto;
+    width:100%;
     margin:0;
     z-index: 2000;
     background-color: #fff;
     font-family: Brandon Text;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+  
 }
 
