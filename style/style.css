@@ -22,7 +22,7 @@ body{
     width:280px;
     position:fixed;
     /* border:1px solid red; */
-    height:100%;
+    height:auto;
     /* z-index: -1; */
     top:0;
     left:0;
