@@ -297,26 +297,41 @@ li>div{
   }
   #sign-in-btn{
     list-style: none;
-    width: 65%;
-    background-color: black;
+    width: 90%;
+    background-color: #00819d;
     text-align: center;
-    padding: 10px 30px;
-    
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 1px solid black;
   }
-  #sign-in-btn >a{
+  /* #sign-in-btn >a{
     color: #fff;
     text-decoration: none;
-  }
+  } */
 
   #sign-up-btn{
     list-style: none;
-    width: 65%;
+    width: 90%;
     border: 1px solid black;
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: #00819d;
+    color:white;
 
   }
-  #sign-up-btn >a{
+  #sign-up-btn:hover {
+    background-color: white;
+    color:#00819d;
+    border:1px solid #00819d;
+  }
+  #sign-in-btn:hover{
+    background-color: white;
+    color:#00819d;
+    border:1px solid #00819d;
+  }
+  #sign-up-btn>a{
     
     text-decoration: none;
   }

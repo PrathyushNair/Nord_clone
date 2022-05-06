@@ -11,6 +11,7 @@
 #Prprodimg{
     width:45%;
     height:auto;
+    cursor: pointer;
     /* border:1px solid red; */
 }
 #Prproddesc{
@@ -21,16 +22,18 @@
    
 }
 #Prcreditcard{
-    color:teal
+    color:#00819d
 
 }
 #Prsize{
     width:100%;
     border:1px solid grey;
     height:50px;
+    cursor: pointer;
    
 }
 #sizedropdowns{
+    cursor: pointer;
     display:none;
 
 }
@@ -57,9 +60,11 @@
     border:1px solid grey;
     height:50px;
     margin-top: 20px;
+    cursor: pointer;
    
 }
 #colordropdowns{
+    cursor: pointer;
     display:none;
 
 
@@ -122,6 +127,7 @@
     align-items: center;
     height:35px;
     gap:10px;
+    cursor: pointer;
 }
 #Praddtowishlist{
    color:#00819d;
@@ -131,6 +137,7 @@
     height:35px;
     gap:10px;
     text-decoration: underline;
+    cursor: pointer;
 }
 #Praddtowishlist>span{
     color:grey
