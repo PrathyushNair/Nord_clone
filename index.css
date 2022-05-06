@@ -1,0 +1,381 @@
+
+        #ra{
+            text-align: center;
+        }
+        #rb{
+            font-size: 30px;
+            color: #393939;
+            margin-bottom: 15px;
+        }
+        #rc{
+            padding: 0px 30px !important;
+            width: 250px;
+            height: 40px;
+            color: teal;
+            background-color: white;
+            border: 1px solid teal;
+            font-size: 14.5px;
+        }
+        #rc:hover{
+            background-color: teal;
+            color: white;
+        }
+                                               /* GIft Card */
+        #rd{
+            position: relative;
+            margin-top: 70px;
+        }
+        #rh{
+           width: 97%;
+            margin-left: 25px;
+        }
+        #re{
+            position: absolute;
+            top: 85px;
+            left: 150px;
+            color:  black;
+            font-size: 17px;
+        }
+        #rf{
+            position: absolute;
+            top: 140px;
+            left: 150px;
+            font-size: 17px;
+        }
+        #rg{
+            color: #00819D;
+        }
+                                                  /* Image Slider */
+
+        #rslider{
+            margin-top: 60px;
+            width: 97%;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #rslider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            padding: 0;
+            animation: 15s slider infinite;
+        }
+        #rslider figure img{
+            width: 20%;
+            float: left;
+        }
+
+        @keyframes slider{
+        0%{   left: 0;}
+        30%{  left: -100%;}
+        65%{  left: -200%;}
+        }
+                                               /* online only */
+        
+        #ri{
+            text-align: center;
+            font-size: 30px;
+            line-height: 10px;
+        }
+        #rj{
+            display: flex;
+            justify-content: space-evenly;
+            color: #393939;
+            padding-left: 0;
+        }
+        #rk{
+            display: flex;
+
+        }
+        #kl{
+            width: 100%;
+            height: 350px;
+            
+        }
+        #rm{
+            line-height: 25px;
+            margin-left: 25px;
+        }
+        #rn{
+            color: black;
+            text-decoration: none;
+        }
+        #rn:hover{
+            text-decoration: underline;
+        }
+        #ro{
+            text-decoration: line-through;
+        }
+        .kk{
+            color: #00819D;
+            line-height: 40px;
+        }
+        #dd{
+           list-style: none;
+           font-weight: bold;
+           margin-top: 90px !important;
+        }
+        #dd:hover{
+            text-decoration: underline;
+        }
+                                              /* spring must haves for all */
+
+        #rp{
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 80px;
+        }
+        #rq{
+            display: flex;
+        }
+        #rr{
+            width: 98%;
+            margin-left: 25px;
+            position: relative;
+        }
+        #rs{
+            margin-left: 25px;
+            font-size: 22px;
+            line-height: 15px;
+            margin-top: 10px;
+        }
+        #rt{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+            margin-left: -15px;
+            color: #00819D;
+        }
+        #ss{
+            color: #00819D;
+        }
+                                      /* trending now  */
+
+        #ru{
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 100px;
+        }  
+        #rv{
+            display: flex;
+            gap: 10px;
+        }  
+        #rw{
+            width: 100%;
+            height: 300px;
+            
+        }  
+        #rx{
+            margin-left: 70px;
+            line-height: 30px;
+        }     
+                                                     /* slider 2                */
+
+        #ka{
+            position: relative;
+            margin-top: 120px;
+        }
+        #kb{
+            width: 98%;
+            margin-left: 25px;
+        }
+        #kc{
+            position: absolute;
+            top: 40px;
+            right: 150px;
+            font-size: 16px;
+            color: white;
+        }
+        #ke{
+            position: absolute;
+        }
+        #kd{
+            position: absolute;
+            top: 30px;
+            right: 230px;
+            font-size: 16px;
+            color: white;
+            line-height: 25px;
+        }
+        #kf{
+            
+            position: absolute;
+            top: 90px;
+            right: 160px;
+            font-size: 16px;
+            display: flex;
+            gap: 20px;
+            color: white;
+            list-style: none;
+        }
+        #kslider{
+            margin-top: 150px;
+            width: 97%;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+        #kslider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            padding: 0;
+            animation: 12s slide infinite;
+        }
+        #kslider figure img{
+            width: 20%;
+            float: left;
+        }
+
+        @keyframes slide{
+        0%{   left: 0;}
+        30%{  left: -100%;}
+        
+        }
+                                            /* Men & Women */
+                                
+        #kg{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            list-style: none;
+            font-size: 25px;
+            margin: 10px 0px 0px;
+            padding: 15px 15px 8px;
+            font-weight: bolder;
+            margin-top: 130px;
+            margin-bottom: 20px;
+        }
+        #kg:hover{
+             text-decoration: underline;
+        }
+        #kh{
+            display: flex;
+            margin-left: 25px;
+            gap: 10px;
+        }
+        #kj{
+            width: 100%;
+            height: 350px;
+        }
+        #aa{
+            width: 100%;
+            height: 350px;
+        }
+        #ki{
+            line-height: 30px;
+            margin-left: 20px;
+        }
+        #km{
+            text-decoration: none;
+            color: #393939;
+        }
+        #km:hover{
+            text-decoration: underline;
+        }
+        #ww{
+            margin-top: 5px;
+            font-size: 21px;
+        }
+       #xx{
+           font-size: 18px;
+           margin-top: -20px;
+           line-height: 30px;
+       }
+       #yy{
+           color: #00819D;
+           font-size: 16px;
+           margin-top: -40px;
+       }
+                                                /* Spring */
+
+       #kn{
+           text-align: center;
+           font-size: 29px;
+           margin-top: 120px;
+           margin-bottom: 60px;
+       }
+       #ko{
+           display: flex;
+           margin-left: 10px;
+       }
+       #kp{
+           width: 100%;
+       }
+       #kq{
+           margin-left: 20px;
+           font-size: 16px;
+       }
+       #kr{
+           display: flex;
+           list-style: none;
+           margin-left: -40px;
+           gap: 20px;
+           font-size: 18px;
+       }
+                                            /* Best selling */
+
+       #ks{
+          margin-left: 25px;
+          font-size: 25xp;
+          margin-top: 120px;
+       }
+       #kt{
+           display: flex;
+       }
+       #ku{
+           width: 90%;
+           margin-left: 30px;
+       }
+       #kv{
+           margin-left: 30px;
+           line-height: 20px;
+       }
+                                              /* more to know */
+
+       #kw{
+         text-align: center;
+         font-size: 30px;
+         margin-top: 80px;
+         margin-bottom: 60px;
+       }
+       #kx{
+           display: flex;
+       }
+       #ky{
+           width: 98%;
+           height: 200px;
+           margin-left: 30px;
+       }
+       #kz{
+           margin-left: 30px;
+           font-size: 16px;
+           margin-top: -10px;
+       }
+                                    /* rack your look */
+
+       #cc{
+           text-align: center;
+           margin-top: 120px;
+           margin-bottom: 60px;
+       }
+       #cc1{
+           font-size: 21px;
+           margin-bottom: -10px;
+       }
+       #cc2{
+           font-size: 18px;
+       }
+       #de{
+           display: flex;
+           width: 97%;
+           margin-top: -5px;
+       }
+       #ff{
+           width: 97%;
+           margin-left: 25px;
+           
+       }
+
+                                                /* Over */
