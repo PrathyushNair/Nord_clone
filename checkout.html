@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./styles/checkoutStyle.css">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+<body>
+    <div id="akNavContainer">
+        <img src="https://n.nordstrommedia.com/alias/nordstrom-rack-logo.svg" alt="blank" id="rimg" onclick="window.location.href='index.html'">
+        <!-- <span><i class="fa-solid fa-bag-shopping"></i></span> -->
+        <img src="./styles/cartImg.PNG" alt="" id="cartImg">
+    </div>
+    <div id="akBodyContainer">
+        <div id="akMiddleContainer">
+            <div id="akMiddleLeft">
+                <div class="cOutDetailsCont">
+                    <p style="font-size: 29px; font-weight: 400; color: #393939; margin-bottom: 0;">Checkout</p>
+                    <p><a href="" class="linkColor">Edit Shopping Bag</a></p>
+                    <p class="sectionHeading">Delivery</p>
+                    <p><a href="" class="linkColor">Change shipping speed</a></p>
+                    <p class="innerText" style="color: #737373; line-height: 10px;">Thu, 5/12-Wed, 5/18</p>
+                    <p class="innerText" style="color: #737373; line-height: 1px;">Free</p>
+                    <div id="prodImgContainer"></div>
+                </div>
+                <div class="cOutDetailsCont">
+                    <p class="sectionHeading">Shipping address</p>
+                    <p class="innerText"><sup class="sup">*</sup> Required</p>
+                    
+                    <p class="userDetailsTitle">First Name<sup class="sup">*</sup></p>
+                    <input class="inputStyle" type="text" name="" id="fname">
+                    <span class="errorMsg" id="ef">Enter the first name.</span>
+
+                    <p class="userDetailsTitle">Last Name<sup class="sup">*</sup></p>
+                    <input class="inputStyle" type="text" name="" id="lname">
+                    <span class="errorMsg" id="el">Enter the last name.</span>
+
+                    <p><a href="" class="linkColor">Free shipping to a Nordstrom or Nordstrom Rack Store</a> </p>
+
+                    <p class="userDetailsTitle">Address<sup class="sup">*</sup></p>
+                    <input class="inputStyle" type="text" name="" id="address">
+                    <span class="errorMsg" id="ea">Enter the address.</span>
+                </div>
+                <div class="cOutDetailsCont">
+                    <p class="sectionHeading"><i class="fa-solid fa-gift"></i> Gift options</p>
+                    <p class="innerText">Write a gift message at Checkout and we'll email it to the recipient when their item is delivered.</p>
+                    <p><a href="" class="linkColor">Add gift message</a></p>
+                </div>
+                <div class="cOutDetailsCont">
+                    <p class="sectionHeading">Contact info</p>
+                    <p style="color: #393939;"><span class="userDetailsTitle">Email</span> (for order updates)<sup class="sup">*</sup></p>
+                    <input class="inputStyle" type="text" name="" id="email">
+                    <span class="errorMsg" id="ee">Enter the email address.</span>
+
+                    <p style="color: #393939;"><span class="userDetailsTitle">Phone number</span> (for order updates)<sup class="sup">*</sup></p>
+                    <input class="inputStyle" type="number" name="" id="mobile">
+                    <span class="errorMsg" id="em">Enter the 10-digit phone number.</span>
+                </div>
+                <div class="cOutDetailsCont">
+                    <p class="sectionHeading">Payment</p>
+                    <p><input type="radio" name="rd" id="creditCard" class="radioStyle" style="height:20px"> <span style="font-size: 20px; color: #393939; font-weight: 700;"><i class="fa-regular fa-credit-card"></i> Credit Card</span></p>
+                    <div style="padding-left: 30px; display: none;" id="creditCardDetails">
+                        <p class="userDetailsTitle">Card number<sup class="sup">*</sup></p>
+                        <input class="inputStyle" type="number" name="" id="cardNumber">
+                        <!-- <span class="errorMsg" id="">Enter the credit card number.</span> -->
+    
+                        <p class="userDetailsTitle">Expiration date<sup class="sup">*</sup></p>
+                        <input class="inputStyle" style="width:15%" type="date" name="" id="expiry">
+                        <!-- <span class="errorMsg" id="">Enter the expiration date.</span> -->
+    
+                        <p class="userDetailsTitle">Security code<sup class="sup">*</sup></p>
+                        <input class="inputStyle" style="width:10%" type="number" name="" id="cvv">
+                        <!-- <span class="errorMsg" id="">Enter the security code.</span> -->
+    
+                        <p class="userDetailsTitle">Billing address</p>
+                        <input type="checkbox" name="" id="billAdd"><span class="innerText">Same as shipping address</span>
+    
+                        <p class="userDetailsTitle">First name<sup class="sup">*</sup></p>
+                        <input class="inputStyle" type="text" name="" id="cardFname">
+                        <!-- <span class="errorMsg" id="">Enter the first name.</span> -->
+    
+                        <p class="userDetailsTitle">Last name<sup class="sup">*</sup></p>
+                        <input class="inputStyle" type="text" name="" id="cardLname">
+                        <!-- <span class="errorMsg" id="">Enter the last name.</span> -->
+                        
+                        <p class="userDetailsTitle">Address<sup class="sup">*</sup></p>
+                        <input class="inputStyle" type="text" name="" id="cardAdd">
+                        <!-- <span class="errorMsg" id="">Enter the address</span> -->
+                    </div>
+                    
+
+                    <p><input type="radio" name="rd" id="payPal" class="radioStyle"> <img src="./styles/paypal.PNG" alt=""></p>
+
+                    <p><input type="radio" name="rd" id="afterpay" class="radioStyle"> <img src="./styles/afterpay.PNG" alt=""></p>
+                    
+                    <p><input type="radio" name="rd" id="cod" class="radioStyle" style="height:20px"><span style="font-size: 20px; color: #393939; font-weight: 700;"> Cash on delivery</span></p>
+                    <span class="errorMsg" id="ecod">Please select a payment method.</span>
+                
+                </div>
+            </div>
+            <div id="akMiddleRight">
+                <div>
+                    <p class="sectionHeading">Review order</p>
+                    <p class="rOrder"><span>Your items</span><span id="totalItemsPrice"></span></p>
+                    <p class="rOrder"><span>Shipping</span><span>$7</span></p>
+                    <p class="rOrder"><span>Estimated tax</span><span>$5</span></p>
+                    <hr>
+                    <p class="rOrder" style="font-size: 19px; line-height: 27px;"><span>Estimated tax</span><span id="totalAmount"></span></p>
+
+                    <button id="placeOrder">Place Order</button>
+                    <p id="needHelp">Need help? Call 1.888.966.6283 or <a href="" class="linkColor">chat with us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./scripts/akCheckout.js"></script>

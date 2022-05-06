@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        #akNavContainer{
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            align-items: center;
+            border-bottom: 2px solid #cac4c4;
+        }
+
+        #rimg{
+            width: 53px;
+            height: 20px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        #cartImg{
+            margin-right: 20px;
+        }
+
+        #successImg{
+            width: 100%;
+            height: 400px;
+        }
+
+        button{
+            width: 100%;
+            border: none;
+            background-color: #00819d;
+            color: #fff;
+            padding: auto;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        #bodyCont>div{
+            margin: auto;
+            width: 30%;
+        }
+
+        button:hover{
+            border: 1px solid #00819d;
+            color: #00819d;
+            background-color: #fff;
+        }
+
+        #bodyCont{
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="akNavContainer">
+        <img src="https://n.nordstrommedia.com/alias/nordstrom-rack-logo.svg" alt="blank" id="rimg" onclick="window.location.href='index.html'">
+        <!-- <span><i class="fa-solid fa-bag-shopping"></i></span> -->
+        <img src="./styles/cartImg.PNG" alt="" id="cartImg">
+    </div>
+
+    <div id="bodyCont">
+        <img src="./styles/success.jpeg" alt="" id="successImg">
+        <div><button onclick="window.location.href='index.html'">Continue Shopping</button></div>
+    </div>
+</body>
+</html>
