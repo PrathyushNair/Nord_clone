@@ -32,9 +32,10 @@
     <div id="navContainer"></div>
     <div id="ra">
         <h1 id="rb">More to Rack, easier and faster.</h1>
-        <a href="#">
+        <a href="signin.html">
             <button id="rc">Sign In or Create an Account</button>
         </a>
+        <p id="welcome_message"></p>
         
     </div>
 
@@ -666,3 +667,25 @@
 <script src="./scripts/nav.js" type="module"></script>
 
  <script src="./scripts/foot.js" type="module"></script>
+
+ <script>
+   document.addEventListener("DOMContentLoaded", function (e) {
+
+var p = document.getElementById("welcome_message");
+
+if (localStorage.getItem('logeduser') != null) {
+    p.innerText = "Welcome,\t" + JSON.parse(localStorage.getItem('logeduser')).fname;
+     document.getElementById("rc").style.display = "none";
+    // document.getElementById("sign-up-btn").style.display = "none";
+    var signout = document.getElementById("signout");
+    signout.style.display = "block"
+    signout.addEventListener("click", function (ev) {
+        localStorage.removeItem("logeduser");
+        document.location = "index.html";
+    });
+
+}
+
+
+});  
+ </script>

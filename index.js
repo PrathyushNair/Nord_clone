@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         signout.style.display = "block"
         signout.addEventListener("click", function (ev) {
             localStorage.removeItem("logeduser");
-            document.location = "header.html";
+            document.location = "index.html";
         });
     
     }

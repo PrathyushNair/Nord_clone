@@ -285,7 +285,7 @@
                 document.getElementById('error_message').style.visibility = "hidden";
                 document.getElementById('password').removeAttribute("class");
                 document.getElementById('password').setAttribute("class", "signup-input")
-                document.location = "header.html";
+                document.location = "index.html";
                 var userDetails = JSON.parse(localStorage.getItem('users'));
                 var arr = userDetails.filter(function (el) {
                     return el.email === email;
@@ -302,7 +302,7 @@
                     }
 
                     if (JSON.parse(localStorage.getItem(key)).length === 0) {
-                        window.location.href = 'header.html';
+                        window.location.href = 'index.html';
                     } else if (generic_bag != null) {
                         window.location.href = 'shopping_bag.html';
                         localStorage.setItem('bag', JSON.stringify([]));

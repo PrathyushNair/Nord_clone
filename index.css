@@ -377,5 +377,10 @@
            margin-left: 25px;
            
        }
+       #welcome_message{
+           font-size: 25px;
+           font-weight: bold;
+           color: teal;
+       }
 
                                                 /* Over */
