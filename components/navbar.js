@@ -1,7 +1,7 @@
 function navbar(){
     return `
     <div id="rmain">
-        <img src="https://n.nordstrommedia.com/alias/nordstrom-rack-logo.svg" alt="blank" id="rimg">
+    <a href="index.html"> <img src="https://n.nordstrommedia.com/alias/nordstrom-rack-logo.svg" alt="blank" id="rimg"></a>
         <div id="rinput">
             <button id="rsearch"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input type="search" id="rbar" name="keyword" autocomplete="off" placeholder="Search for products or brands" maxlength="140" value="">
