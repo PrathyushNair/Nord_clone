@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function (e) {
+
+  var p = document.getElementById("signInText");
+
+  if (localStorage.getItem('logeduser') != null) {
+      p.innerText = "Hi,\t" + JSON.parse(localStorage.getItem('logeduser')).fname;
+      document.getElementById("sign-in-btn").style.display = "none";
+      document.getElementById("sign-up-btn").style.display = "none";
+      var signout = document.getElementById("signout");
+      signout.style.display = "block"
+      signout.addEventListener("click", function (ev) {
+          localStorage.removeItem("logeduser");
+          document.location = "header.html";
+      });
+  
+  }
+
+  
+  });
+
+
 var cartData = JSON.parse(localStorage.getItem("bag"));
 
 console.log(cartData)
@@ -16,6 +37,7 @@ function showdata(cartData) {
     var box1 = document.createElement("div");
     var img = document.createElement("img");
     img.src = el.image_url;
+    img.setAttribute("class","bagimg")
     box1.append(img)
     var box2 = document.createElement("div");
     var name = document.createElement("p");
@@ -25,22 +47,23 @@ function showdata(cartData) {
     description.innerHTML = el.description;
 
     var brand = document.createElement("p");
-    brand.innerHTML = `brand: ${el.description}`;
+    brand.innerHTML = `brand: ${el.brand}`;
 
     var gender = document.createElement("p");
-    gender.innerHTML = `gender: ${el.description}`;
+    gender.innerHTML = `gender: ${el.gender}`;
 
     var button = document.createElement("button");
-    button.textContent = "remove";
+    button.textContent = "Remove";
     button.addEventListener("click", function () {
       removeitem(el, index)
     })
     var button2 = document.createElement("button");
+  
     var a = document.createElement("a");
     a.href = "#";
-    a.innerHTML = "edit"
+    a.innerHTML = "Save for Later"
     button2.append(a);
-    box2.append(name, description, brand, gender, button2, button)
+    box2.append(name, description, brand, gender, button, button2)
     main.append(box1, box2);
     td1.append(main);
 

@@ -203,17 +203,46 @@ function myfunction()
     // {
     //    console.log("50 px exceeded") 
     // }
-    if(document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+     if(document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
         console.log("down")
         document.querySelector("#Prsidebar").style.marginTop="0px"
+        document.querySelector("#Prsidebar").style.display="block"
       }
-      else if(document.body.scrollTop < 450 || document.documentElement.scrollTop <450) {
+    else if(document.body.scrollTop < 350 || document.documentElement.scrollTop <350) {
         console.log("up")
         document.querySelector("#Prsidebar").style.marginTop="200px"
+        document.querySelector("#Prsidebar").style.display="block"
       }
+
+  
+      
+   
      
     
 }
-/////////////////////////////
+///////////////////////////////////////////////////////
+
+/////////////////////Scroll bottom //////////////////
+
+// window.onscroll=function(){myfunction2()}
+// let count2=0
+// function myfunction2()
+// {   count2++
+//     // if(count>50 )
+//     // {
+//     //    console.log("50 px exceeded") 
+//     // }
+//     if(document.body.scrollHeight >80 || document.documentElement.scrollHeight >80) {
+//         console.log("down")
+//         document.querySelector("#Prsidebar").style.display="none"
+//       }
+//       else{
+//         document.querySelector("#Prsidebar").style.display="block"
+//       }
+     
+     
+    
+// }
+///////////////////////////////////////////////////
 
 
