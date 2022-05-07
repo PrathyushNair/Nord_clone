@@ -36,11 +36,14 @@ function navbar(){
             </div>
 
         </div>
-        <div id="cartStyle">
+        <div  style="width:80px;display:flex; " id="cartStyle">
         <a id="shoppingbag" href="shopping_bag.html">
-        <i class="fa-solid fa-bag-shopping"></i>
-         </a>&nbsp;
-         <span id="cartItems">0</span>
+        
+        <img style="width:50px ;height:50px" src="./styles/cartImg.PNG"> 
+       
+         </a>
+         <p style="margin-left:0px;margin-top:15px" id="cartItems">0</p>
+         
            
         </div>
     </div>

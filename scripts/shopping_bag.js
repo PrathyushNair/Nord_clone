@@ -71,6 +71,14 @@ function showdata(cartData) {
     var td2 = document.createElement("td");
 
     var sel = document.createElement("select");
+    sel.style.color="#00819d"
+    sel.style.border="none"
+    //////////////////////////////////////////////////////
+    // sel.addEventListener("change",function(){
+    //   el.finalprice=sel.value*el.price
+    //   console.log(el)
+    // })
+    ////////////////////////////////////////////
     var opt1 = document.createElement("option");
     var opt2 = document.createElement("option");
 

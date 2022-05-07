@@ -290,7 +290,8 @@ li>div{
   }
 
   #cartStyle{
-      font-size: 20px;
+      font-size:20px;
+      
   }
   #signout{
     cursor: pointer;
@@ -305,6 +306,7 @@ li>div{
     color: #fff;
     border: 1px solid black;
   }
+  
   /* #sign-in-btn >a{
     color: #fff;
     text-decoration: none;
