@@ -64,3 +64,5 @@ Contributions.
  
 Netlify Link: https://quiet-crepe-a6deeb.netlify.app/
 
+Medium Link:https://medium.com/@prathyu360/cloning-the-website-of-nordstrom-rack-af68fce46989
+
