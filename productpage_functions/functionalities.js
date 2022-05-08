@@ -13,6 +13,7 @@ let display=(mens_activewear)=>{
              img.src=el.image_url
              img.style.height="50%"
              img.style.width="100%"
+             img.style.objectFit="cover"
              let quickview=document.createElement("div")
              quickview.setAttribute("class","Prquickview")
              quickview.innerText="Quick View"
