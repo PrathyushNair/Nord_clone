@@ -35,6 +35,7 @@ bag.map(function(el){
     img.style.height = "85px";
     img.style.objectFit = "cover";
     img.style.marginRight = "10px";
+    img.style.objectFit="cover"
 
     document.getElementById("prodImgContainer").append(img);
 })

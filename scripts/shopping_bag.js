@@ -37,6 +37,7 @@ function showdata(cartData) {
     var box1 = document.createElement("div");
     var img = document.createElement("img");
     img.src = el.image_url;
+    img.style.objectFit="cover"
     img.setAttribute("class","bagimg")
     box1.append(img)
     var box2 = document.createElement("div");

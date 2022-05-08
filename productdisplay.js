@@ -49,6 +49,7 @@ proddata.map((el)=>{
     Primg.src=el.image_url
     Primg.style.height="70%"
     Primg.style.width="70%"
+    Primg.style.objectFit="cover"
     document.querySelector("#Prprodimg").append(Primg)
     document.querySelector("#Prdesc").innerText=el.description
     document.querySelector("#Prprodname").innerText=el.brand
