@@ -38,15 +38,17 @@ Contributions.
 
 1. Ashish Kumar Prusty.
 
-   a) Development of the navigation bar.
+   a) Development of sign-up and login page.
  
-   b) Development of checkout and order success page.
+   b)  Development of bag page.
  
 2. Ashok Kumar.
 
-   a) Development of sign-up and login page.
+   a)  Development of the navigation bar.
+   
  
-   b) Development of bag page.
+   b) Development of checkout and order success page.
+   
 
 3. Prathyush Nair.
  
