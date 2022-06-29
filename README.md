@@ -21,9 +21,10 @@ FUNCTIONALITIES:  Sign up, log in, filter products, sort products, add a product
 
    ![My Remote Image](https://miro.medium.com/max/1400/1*qsTonCChtIiTXGQB7xCjlw.png)
    
-    ![My Remote Image](https://miro.medium.com/max/1212/1*xWrTm7bkrEDjlT7S5nLrxQ.png)
-
-    On clicking the create account button on the home page the user will be redirected to sign-in/ create account page. The user has to enter his/her password. On         clicking next if you are a new user you will be asked to fill in your details and create a password. After creating an account the user will be redirected             to sign in. Here he/she has to enter the set password and can easily log in to the website. If you are a pre existing user you will be asked to re-enter your         password and you can easily log in. Hence for a pre existing user, we have eliminated the pain of re-entering the details and creating a new password. 
+    On clicking the create account button on the home page the user will be redirected to sign-in/ create account page. The user has to enter his/her password. 
+    
+    On clicking next if you are a new user you will be asked to fill in your details and create a password. After creating an account the user will be redirected             to sign in. Here he/she has to enter the set password and can easily log in to the website. 
+    If you are a pre existing user you will be asked to re-enter your password and you can easily log in. Hence for a pre existing user, we have eliminated the pain of     re-entering the details and creating a new password. 
     The logout functionality will be visible to the user if he/she hovers over his/her name in the navbar after logging in.
     
 4.  Mens Activewear Page.
