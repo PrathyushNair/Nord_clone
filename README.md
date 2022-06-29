@@ -4,10 +4,14 @@ TECH STACK : HTML(46.5%),CSS(13.9%),JavaScript(39.6%).
 
 FUNCTIONALITIES:  Sign up, log in, filter products, sort products, add a product to bag, remove products from bag, and place an order.
 
-1.	Navbar and footer.
+1.	a) Navbar.
+    ![My Remote Image](https://miro.medium.com/max/1400/1*7t5Rw3CTS62CiZ5n9oxS8A.png)
     
+    b)Footer
+    ![My Remote Image](https://miro.medium.com/max/1400/1*yCy9aPqmbkzIlHEGZ217zA.png)
     The navbar is common to all the pages. We have applied the concept of exporting the code to all the pages instead of copying the code on all pages. . On hovering     on the various categories like clearance, women, men, etc, the user will see a dropdown of various categories he/she can choose from.  The footer is common to         all pages and the same exporting concept has also been used here.
 2.  Home page.
+     ![My Remote Image](https://miro.medium.com/max/1400/1*hSHSLjaXwwI9N6ozdkgacg.png)
   
     a) The login indicator: If the user is not logged in, he/she will be routed to our sign-in page by simply clicking the sign-in or create account                          button. But if the user is already logged in, he/she will be able to see his/her name attached with a welcome message at top of the homepage.
      
@@ -15,22 +19,34 @@ FUNCTIONALITIES:  Sign up, log in, filter products, sort products, add a product
      
 3.  Create an account and log in.
 
+   ![My Remote Image](https://miro.medium.com/max/1400/1*qsTonCChtIiTXGQB7xCjlw.png)
+   
+    ![My Remote Image](https://miro.medium.com/max/1212/1*xWrTm7bkrEDjlT7S5nLrxQ.png)
+
     On clicking the create account button on the home page the user will be redirected to sign-in/ create account page. The user has to enter his/her password. On         clicking next if you are a new user you will be asked to fill in your details and create a password. After creating an account the user will be redirected             to sign in. Here he/she has to enter the set password and can easily log in to the website. If you are a pre existing user you will be asked to re-enter your         password and you can easily log in. Hence for a pre existing user, we have eliminated the pain of re-entering the details and creating a new password. 
     The logout functionality will be visible to the user if he/she hovers over his/her name in the navbar after logging in.
     
 4.  Mens Activewear Page.
 
+     ![My Remote Image](https://miro.medium.com/max/1400/1*WD5aGCtfIR7iTQdxj2nYVQ.png)
+
     Under the men’s category upon clicking the activewear section, the user will be routed to the men’s activewear page. Here     the user can see a variety of           available products. He/she may sort the products based on their rating or price. We have       also provided the functionality of filtering, whereby a user can       filter the products as per category, gender, brand, and     fit. Upon clicking a product the user will be redirected to the product description page.
     
 5.  Product Description page.
+     ![My Remote Image](https://miro.medium.com/max/1400/1*1SqiqMScqFl_iKfrnDnskg.png)
 
     The selected product’s detail will be displayed on the product description page. Functionalities like selecting the       size of the product and the color of the     product are available on this page. The user can also add the products to the     bag by simply clicking the add to bag button. At the bottom, the user will also     be able to see the products which are     frequently bought together. This frequently bought section is dynamic and varies for  different products.
     
+     ![My Remote Image](https://miro.medium.com/max/1400/1*_iSxtyG7oKTB2Nuo5p8JGA.png)
+    
 6.  Bag page.
-
-    This page will contain all the products that are added to the bag. Users can remove the product from the bag. At the       very bottom of the page, the total         payable amount will be visible to the user. Clicking on the checkout button will       route the user to the checkout page.
+    
+    ![My Remote Image](https://miro.medium.com/max/1400/1*hMX9jIUg62Z1RHAmIWk_Og.png)
+    
+    This page will contain all the products that are added to the bag. Users can remove the product from the bag. At the       very bottom of the page, the total           payable amount will be visible to the user. Clicking on the checkout button will       route the user to the checkout page.
     
 7.  Checkout page.
+     ![My Remote Image](https://miro.medium.com/max/1400/1*qtafurnmKfMRe8oR9Yfseg.png)
     Access to the checkout page is only available to a logged-in user. If not logged in the checkout page will route you       to the sign-in page and you may sign in     to continue to the checkout page. The checkout page will display the images of     the products you have added to the bag and the details of the same. To place an     order the user will have to fill in       the details of the shipping address and select a mode of payment. 
     
 
